@@ -1,0 +1,603 @@
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/test_server $ telnet 0.0.0.0 1500
+Trying 0.0.0.0...
+Connected to 0.0.0.0.
+Escape character is '^]'.
+15 9
+24
+10 12
+22
+13 l
+wrong operands
+10 11
+21
+15215215215 2152152152152152
+56007
+1111111 1111111
+overflow
+^C
+^]
+telnet> Q
+Connection closed.
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/test_server $ cd ..
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1 $ ls
+es1.4/	lab1_pd1.pdf  lab1.txt	test_server/
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1 $ mkdir es1.2
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1 $ cd test_server/
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/test_server $ ls
+errlib.c*  errlib.h*  server_test*  server_test.c*  sockwrap.c	sockwrap.h
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/test_server $ cp sockwrap..c ../es1.2
+cp: cannot stat 'sockwrap..c': No such file or directory
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/test_server $ cp sockwrap.c ../es1.2
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/test_server $ cp sockwrap.h ../es1.2
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/test_server $ cd ..
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1 $ cd es1.2
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ ls
+sockwrap.c  sockwrap.h
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ gedit client_es1_1.c
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ ls
+client_es1_1.c	sockwrap.c  sockwrap.h
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ cd ..
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1 $ cd test_server/
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/test_server $ ls
+errlib.c*  errlib.h*  server_test*  server_test.c*  sockwrap.c	sockwrap.h
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/test_server $ cp errlib..h ../es1.2
+cp: cannot stat 'errlib..h': No such file or directory
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/test_server $ cp errlib.h ../es1.2
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/test_server $ cp errlib.c ../es1.2
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/test_server $ cd ../es1.2
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ ls
+client_es1_2.c	errlib.c*  errlib.h*  sockwrap.c  sockwrap.h
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ ls
+client_es1_2.c	errlib.c*  errlib.h*  sockwrap.c  sockwrap.h
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ gcc -g -Wall -DTRACE -o client_es1_2 client_es1_2.c errlib.c sockwrap.c
+client_es1_2.c: In function ‘main’:
+client_es1_2.c:37:2: error: expected expression before ‘if’
+  if (argc != 3) {
+  ^~
+client_es1_2.c:46:2: warning: implicit declaration of function ‘memset’ [-Wimplicit-function-declaration]
+  memset(&saddr, 0, sizeof(saddr)); // alloco struct
+  ^~~~~~
+client_es1_2.c:46:2: warning: incompatible implicit declaration of built-in function ‘memset’
+client_es1_2.c:46:2: note: include ‘<string.h>’ or provide a declaration of ‘memset’
+client_es1_2.c:29:24: warning: unused variable ‘result’ [-Wunused-variable]
+  int                s, result;
+                        ^~~~~~
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ gcc -g -Wall -DTRACE -o client_es1_2 client_es1_2.c errlib.c sockwrap.c
+client_es1_2.c: In function ‘main’:
+client_es1_2.c:48:2: warning: implicit declaration of function ‘memset’ [-Wimplicit-function-declaration]
+  memset(&saddr, 0, sizeof(saddr)); // alloco struct
+  ^~~~~~
+client_es1_2.c:48:2: warning: incompatible implicit declaration of built-in function ‘memset’
+client_es1_2.c:48:2: note: include ‘<string.h>’ or provide a declaration of ‘memset’
+client_es1_2.c:31:24: warning: unused variable ‘result’ [-Wunused-variable]
+  int                s, result;
+                        ^~~~~~
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ ^C
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ gcc -g -Wall -DTRACE -o client_es1_2 client_es1_2.c errlib.c sockwrap.c
+client_es1_2.c: In function ‘main’:
+client_es1_2.c:32:24: warning: unused variable ‘result’ [-Wunused-variable]
+  int                s, result;
+                        ^~~~~~
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ gcc -g -Wall -DTRACE -o client_es1_2 client_es1_2.c errlib.c sockwrap.c
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ ls
+client_es1_2*  client_es1_2.c  errlib.c*  errlib.h*  sockwrap.c  sockwrap.h
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ ./client_es1_2 0.0.0.0 1500
+Connessione riuscitaConnessione chiusalabinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ gcc -g -Wall -DTRACE -o client_es1_2 client_es1_2.c errlib.c sockwrap.c
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ ./client_es1_2 0.0.0.0 1500
+Connessione riuscita
+Connessione chiusa
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ ./client_es1_2 0.0.0.0 1500
+Connessione riuscita
+Connessione chiusa
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ ./client_es1_2 0.0.0.0 1500
+Connessione riuscita
+Connessione chiusa
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ telnet 0.0.0.0 1500
+Trying 0.0.0.0...
+Connected to 0.0.0.0.
+Escape character is '^]'.
+15 10
+25
+^] 
+telnet> Q
+Connection closed.
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ cd ..
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1 $ mkdir es1.3
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1 $ ls
+es1.2/	es1.3/	es1.4/	lab1_pd1.pdf  lab1.txt	test_server/
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1 $ ls -r
+test_server/  lab1.txt	lab1_pd1.pdf  es1.4/  es1.3/  es1.2/
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1 $ ls -R
+.:
+es1.2/	es1.3/	es1.4/	lab1_pd1.pdf  lab1.txt	test_server/
+
+./es1.2:
+client_es1_2*  client_es1_2.c  errlib.c*  errlib.h*  sockwrap.c  sockwrap.h
+
+./es1.3:
+client_es1_3.c
+
+./es1.4:
+32bit/	client_udp_1.4*  server_udp_1.4*
+
+./es1.4/32bit:
+client_udp_1.4_32bit*  server_udp_1.4_32bit*
+
+./test_server:
+errlib.c*  errlib.h*  server_test*  server_test.c*  sockwrap.c	sockwrap.h
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1 $ cd es1.2
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ cp errlib.c ../es1.3
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ cp errlib.h ../es1.3
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ cp sockwrap.c ../es1.3
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ cp sockwrap.h ../es1.3
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ cd ..
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1 $ ls -R
+.:
+es1.2/	es1.3/	es1.4/	lab1_pd1.pdf  lab1.txt	test_server/
+
+./es1.2:
+client_es1_2*  client_es1_2.c  errlib.c*  errlib.h*  sockwrap.c  sockwrap.h
+
+./es1.3:
+client_es1_3.c	errlib.c*  errlib.h*  sockwrap.c  sockwrap.h
+
+./es1.4:
+32bit/	client_udp_1.4*  server_udp_1.4*
+
+./es1.4/32bit:
+client_udp_1.4_32bit*  server_udp_1.4_32bit*
+
+./test_server:
+errlib.c*  errlib.h*  server_test*  server_test.c*  sockwrap.c	sockwrap.h
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1 $ cd es1.2
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ ls
+client_es1_2*  client_es1_2.c  errlib.c*  errlib.h*  sockwrap.c  sockwrap.h
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ gcc -g -Wall -DTRACE -o client_es1_2 client_es1_2.c errlib.c sockwrap.c
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ ./client_es1_2 0.0.0.0 1500
+Connected to 0:1500Connessione chiusa
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ gcc -g -Wall -DTRACE -o client_es1_2 client_es1_2.c errlib.c sockwrap.c
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ ./client_es1_2 0.0.0.0 1500
+Connected to 0.0.0.0:1500
+Connessione chiusa
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.2 $ cd ../es1.3
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ls
+client_es1_3.c	errlib.c*  errlib.h*  sockwrap.c  sockwrap.h
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+client_es1_3.c: In function ‘main’:
+client_es1_3.c:36:17: error: ‘arv’ undeclared (first use in this function); did you mean ‘argv’?
+     prog_name = arv[0];
+                 ^~~
+                 argv
+client_es1_3.c:36:17: note: each undeclared identifier is reported only once for each function it appears in
+client_es1_3.c:44:28: warning: passing argument 2 of ‘inet_aton’ from incompatible pointer type [-Wincompatible-pointer-types]
+     if (inet_aton(argv[1], &taddr_n) == 0) {
+                            ^
+In file included from sockwrap.h:17:0,
+                 from client_es1_3.c:19:
+/usr/include/arpa/inet.h:73:12: note: expected ‘struct in_addr *’ but argument is of type ‘uint32_t * {aka unsigned int *}’
+ extern int inet_aton (const char *__cp, struct in_addr *__inp) __THROW;
+            ^~~~~~~~~
+client_es1_3.c:55:20: error: ‘struct in_addr’ has no member named ‘sin_addr’; did you mean ‘s_addr’?
+     saddr.sin_addr.sin_addr  = htonl(taddr_n);
+                    ^~~~~~~~
+                    s_addr
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+client_es1_3.c: In function ‘main’:
+client_es1_3.c:36:17: error: ‘arv’ undeclared (first use in this function); did you mean ‘argv’?
+     prog_name = arv[0];
+                 ^~~
+                 argv
+client_es1_3.c:36:17: note: each undeclared identifier is reported only once for each function it appears in
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 1500
+Connected to 0.0.0.0:1500
+Connection closed
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 1500
+Connected to 0.0.0.0:1500
+Connection closed
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0..03 1500
+address should be xxx.xxx.xxx.xxx
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 hfx
+(./client_es1_3) error - connect() failed: Connection refused
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 1500
+Connected to 0.0.0.0:1500
+Connection closed
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 hfx
+address should be an integer
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 1500
+Connected to 0.0.0.0:1500
+Connection closed
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 hfx
+Segmentation fault (core dumped)
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 1500
+Connected to 0.0.0.0:1500
+Connection closed
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 hfx
+usage: ./client_es1_3 <address> <port>
+<port> should be an integer
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0..03 1500
+usage: ./client_es1_3 <address> <port>
+<address> should be xxx.xxx.xxx.xxx
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+client_es1_3.c: In function ‘main’:
+client_es1_3.c:66:13: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘char **’ [-Wformat=]
+     scanf("%s", &buffer);
+            ~^   ~~~~~~~
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+client_es1_3.c: In function ‘main’:
+client_es1_3.c:66:13: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘char **’ [-Wformat=]
+     scanf("%s", &buffer);
+            ~^   ~~~~~~~
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+client_es1_3.c: In function ‘main’:
+client_es1_3.c:64:5: warning: ‘buffer’ is used uninitialized in this function [-Wuninitialized]
+     memset(buffer, 0, 128 * sizeof(char));
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 1500
+Connected to 0.0.0.0:1500
+Segmentation fault (core dumped)
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 1500
+Connected to 0.0.0.0:1500
+Segmentation fault (core dumped)
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+client_es1_3.c: In function ‘main’:
+client_es1_3.c:66:13: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘char (*)[128]’ [-Wformat=]
+     scanf("%s", &buffer);
+            ~^   ~~~~~~~
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 1500
+Connected to 0.0.0.0:1500
+Insert two integer separeted by a space
+135 15
+--> 135 
+Connection closed
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 1500
+Connected to 0.0.0.0:1500
+Insert two integer separeted by a space
+1235 13 
+--> 1235 13 
+Connection closed
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 1500
+Connected to 0.0.0.0:1500
+Insert two integer separeted by a space
+135  35
+--> 135 35 
+Connection closed
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+client_es1_3.c: In function ‘send_buffer’:
+client_es1_3.c:34:18: error: void value not ignored as it ought to be
+         nwritten = Send(s, ptr, nleft, 0);
+                  ^
+client_es1_3.c:38:19: warning: statement with no effect [-Wunused-value]
+             nleft -+ nwritten;
+             ~~~~~~^~~~~~~~~~~
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+client_es1_3.c: In function ‘send_buffer’:
+client_es1_3.c:37:13: warning: implicit declaration of function ‘rr_quit’; did you mean ‘err_quit’? [-Wimplicit-function-declaration]
+             rr_quit ("(%s) error - sendto() failed", prog_name);
+             ^~~~~~~
+             err_quit
+client_es1_3.c: In function ‘main’:
+client_es1_3.c:92:5: warning: ‘buffer’ is used uninitialized in this function [-Wuninitialized]
+     memset(buffer, 0, buffer_size * sizeof(char));
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/ccPRnW4Y.o: In function `send_buffer':
+/export/home/stud/s215272/ProgrammazioneDistribuitaI/lab1_pd1/es1.3/client_es1_3.c:37: undefined reference to `rr_quit'
+collect2: error: ld returned 1 exit status
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+client_es1_3.c: In function ‘send_buffer’:
+client_es1_3.c:37:13: warning: implicit declaration of function ‘rr_quit’; did you mean ‘err_quit’? [-Wimplicit-function-declaration]
+             rr_quit ("(%s) error - sendto() failed", prog_name);
+             ^~~~~~~
+             err_quit
+/tmp/ccDcj5qF.o: In function `send_buffer':
+/export/home/stud/s215272/ProgrammazioneDistribuitaI/lab1_pd1/es1.3/client_es1_3.c:37: undefined reference to `rr_quit'
+collect2: error: ld returned 1 exit status
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 1500
+Connected to 0.0.0.0:1500
+Insert two integer separeted by a space
+15 32
+ data --> 15 32 
+Segmentation fault (core dumped)
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 1500
+Connected to 0.0.0.0:1500
+Insert two integer separeted by a space
+15 32
+ data --> 15 32 
+Segmentation fault (core dumped)
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+client_es1_3.c: In function ‘main’:
+client_es1_3.c:92:5: warning: ‘buffer’ is used uninitialized in this function [-Wuninitialized]
+     memset(buffer, 0, buffer_size * sizeof(char));
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 1500
+Connected to 0.0.0.0:1500
+Insert two integer separeted by a space
+15 32
+ data --> 15 32 
+Segmentation fault (core dumped)
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 1500
+Connected to 0.0.0.0:1500
+Insert two integer separeted by a space
+^C
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 1500
+Connected to 0.0.0.0:1500
+Insert two integer separeted by a space
+^C
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+client_es1_3.c: In function ‘main’:
+client_es1_3.c:93:5: warning: ‘buffer’ is used uninitialized in this function [-Wuninitialized]
+     memset(buffer, 0, buffer_size * sizeof(char));
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 1500
+Connected to 0.0.0.0:1500
+Insert two integer separeted by a space
+153 32
+ data --> 153 32 
+9
+Segmentation fault (core dumped)
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 1500
+Connected to 0.0.0.0:1500
+Insert two integer separeted by a space
+15 32
+ data --> 15 32 
+8
+memset ok
+Segmentation fault (core dumped)
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 1500
+Connected to 0.0.0.0:1500
+Insert two integer separeted by a space
+^C
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 1500
+Connected to 0.0.0.0:1500
+Insert two integer separeted by a space
+15 32
+ data --> 15 32 
+8
+memset ok
+memcpy 1 ok
+memset 1 ok
+memcpy 2 ok
+memcpy 3 ok
+memcpy 4 ok
+memcpy 5 ok
+Segmentation fault (core dumped)
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 1500
+Connected to 0.0.0.0:1500
+Insert two integer separeted by a space
+15 32
+ data --> 15 32 
+7
+memset ok
+memcpy 1 ok
+memset 1 ok
+memcpy 2 ok
+memcpy 3 ok
+memcpy 4 ok
+memcpy 5 ok
+Segmentation fault (core dumped)
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 1500
+Connected to 0.0.0.0:1500
+Insert two integer separeted by a space
+15 32
+ data --> 15 32 
+7
+memset ok
+ buffer --> (null) 
+Connection closed
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 1500
+Connected to 0.0.0.0:1500
+Insert two integer separeted by a space
+15 32
+ data --> 15 32 
+7
+memset ok
+memcpy 1 ok
+Segmentation fault (core dumped)
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+client_es1_3.c: In function ‘main’:
+client_es1_3.c:98:43: error: expected ‘)’ before ‘;’ token
+     memcpy(&buffer + strlen(data1), " ", 1;
+                                           ^
+client_es1_3.c:117:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 1500
+Connected to 0.0.0.0:1500
+Insert two integer separeted by a space
+15 32
+ data --> 15 32 
+7
+memset ok
+memcpy 1 ok
+memcpy 2 ok
+memcpy 3 ok
+memcpy 4 ok
+memcpy 5 ok
+Segmentation fault (core dumped)
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 1500
+Connected to 0.0.0.0:1500
+Insert two integer separeted by a space
+15 32
+ data --> 15 32 
+8
+memset ok
+memcpy 1 ok
+memcpy 2 ok
+memcpy 3 ok
+memcpy 4 ok
+memcpy 5 ok
+Segmentation fault (core dumped)
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 1500
+Connected to 0.0.0.0:1500
+Insert two integer separeted by a space
+15 32
+ data --> 15 32 
+8
+memset ok
+memcpy 1 ok
+Segmentation fault (core dumped)
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ ./client_es1_3 0.0.0.0 1500
+Connected to 0.0.0.0:1500
+Insert two integer separeted by a space
+15 32
+ data --> 15 32 
+8
+memset ok
+memcpy 1 ok
+Segmentation fault (core dumped)
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+client_es1_3.c: In function ‘main’:
+client_es1_3.c:97:26: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘char **’ [-Wformat=]
+     printf(" buffer --> %s \n", &buffer);
+                         ~^      ~~~~~~~
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ gcc -g -Wall -DTRACE -o client_es1_3 client_es1_3.c errlib.c sockwrap.c
+labinf52:~/ProgrammazioneDistribuitaI/lab1_pd1/es1.3 $ 
+

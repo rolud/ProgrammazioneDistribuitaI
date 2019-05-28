@@ -1,0 +1,5 @@
+ESERCIZIO 1.1
+compilazione
+gcc -Wall -DTRACE -o server_test server_test.c errlib.c sockwrap.c
+-> -Wall attiva tutti i warning
+-> -DTRACE attiva una macro che sostituisce i trace(x) con x

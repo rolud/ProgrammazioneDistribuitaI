@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PD1 - LAB 5.2.2</title>
+    <script type="text/javascript">
+        function color() {
+            var colore = document.getElementById("colore").value;
+            switch(colore) {
+                case "red": document.body.style.backgroundColor = "red"; break;
+                case "blue": document.body.style.backgroundColor = "blue"; break;
+                case "green": document.body.style.backgroundColor = "green"; break;
+                case "yellow": document.body.style.backgroundColor = "yellow"; break;
+                case "pink": document.body.style.backgroundColor = "pink"; break;
+                default: document.body.style.backgroundColor = "white";
+            }
+        }
+    </script>
+</head>
+<body>
+	<div id="mainDiv">
+        <p>Seleziona il colore:</p>
+        <select id="colore" size="5" onchange="color()">
+            <option value="red">ROSSO</option>
+            <option value="blue">BLU</option>
+            <option value="green">VERDE</option>
+            <option value="yellow">GIALLO</option>
+            <option value="pink">ROSA</option>
+        </select>
+    </div>
+	
+
+</body>
+</html>
