@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PD1 - LAB 5.2.5</title>
+    <script type="text/javascript">
+        function xmas() {
+            var days = {0:"Domenica", 1:"Lunedì", 2:"Martedì", 3:"Mercoledì", 4:"Giovedì", 5:"Venerdì", 6:"Sabato"};
+            var year = document.getElementById("year").value;
+            var d = new Date();
+            var thisyear = d.getFullYear();
+            d.setFullYear(year);
+            d.setMonth(11);
+            d.setDate(25);
+            var day = days[d.getDay()];
+            var str;
+            if (year >= thisyear) str = "sarà";
+            else str = "è stato";
+            document.getElementById("xmas").innerHTML = "Natale " + year + " " + str + " di " + day + ".";
+        }
+    </script>
+</head>
+<body>
+	<div id="mainDiv">
+        <p>Inserisci un anno: <input type="text" id="year"><button type="button" onclick="xmas()">Cerca il Natale</button></p>
+        <p id="xmas"></p>
+    </div>
+
+
+</body>
+</html>
