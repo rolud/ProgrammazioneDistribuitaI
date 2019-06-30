@@ -1,0 +1,147 @@
+body, html {
+    height: 100%;
+}
+.bg {
+	background-color: #7ca1f8;/*rgb(13,52,139);*/
+
+}
+
+div.main-container {
+	width: 100%;
+}
+
+.cookie-alert {
+	color: #ff0000;
+    background-color: #fff;
+    border-color: #ff0000;
+    position: relative;
+    padding: 100px 0;
+    height: 250px;
+    margin: 250px 0; 
+    font-size: 25px;  
+}
+
+.taken {
+  color:red;
+}
+
+.available {
+  color:green;
+}
+
+#over {
+	background-color: transparent;
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height:100%;
+	z-index:2;
+}
+
+.plane-body {
+	margin: 5% 5%;
+    float: left;
+    color: white;
+    border-left: 8px solid rgb(13,52,139);/*#b3b3b3;*/
+    border-right: 8px solid rgb(13,52,139);/*#b3b3b3;*/
+    padding: 7px 4px;
+    position: relative;
+}
+
+.footer {
+	color: white;
+	background-color: rgb(11,57,161);	
+}
+
+header.main-header {
+	color: white;
+	background-color: rgb(11,57,161);
+}
+
+nav.sidecard {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgb(11,57,161);
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+h2.main-title {font-size: 2.25rem;}
+
+h5.page-content-title {
+	font-size: 1.25rem;
+	color: white;
+	background-color: rgb(11,57,161);
+	border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+}
+
+table.page-sum {
+	width: 100%;
+	color: white;
+	background-color: rgb(11,57,161);
+	margin: 3px 0;
+	border-radius: 3px;
+	padding: 3px;
+}
+
+a {
+	display: inline-block;
+	width: 100%;
+}
+
+button.seat {
+    /* height: 20px;
+    width: 20px; */
+    padding: 3px 5px 1px 5px;
+    border: none;
+ 
+}
+
+.seat-free {
+	background-color: #00a000;
+}
+
+
+.seat-booked {
+    background-color: #ff8300;
+}	
+
+
+.seat-purchased {
+	background-color: #e20000;
+}
+
+.seat-booked-by-me {
+	background-color: #dee200;
+}
+
+.seat-active:hover {
+	background-color: rgb(13,52,139);
+}
+
+a.sidelink {
+	color: white;
+	background-color: rgb(11,57,161);
+	margin: 3px 0;
+	border-radius: 3px;
+}
+
+.sidelink:hover {
+	color: rgb(11,57,161);
+	background-color: white;
+	border: solid 1px rgb(11,57,161);
+}
+
+td, span .seatid {color: rgb(13,52,139)};
+
+
+
+
+
